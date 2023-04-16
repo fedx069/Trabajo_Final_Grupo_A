@@ -1,50 +1,77 @@
 /* Fuente - NR */
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
 /* Reglas generales */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
 }
 
 /* Barra de navegación */
 nav {
-    background-color: rgb(53, 164, 53);
-    height: 75px;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: rgb(53, 164, 53);
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Esto es para que no se peguen arriba y los tape el nav */
-.inicio, .productos, .servicios, .nosotros, .contacto {
-    padding-top: 80px;
+.inicio,
+.productos,
+.servicios,
+.nosotros,
+.contacto {
+  padding-top: 80px;
 }
 
 /* Contenedor para que sea responsive */
 .container {
-    width: 1280px;
-    margin: auto;
+  width: 1280px;
+  margin: auto;
 }
 
 /* Footer simple */
 footer {
-    color: white;
-    margin-top: 100%;
-    height: 75px;
-    background-color: rgb(53, 164, 53);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  color: white;
+  margin-top: 100%;
+  height: 75px;
+  background-color: rgb(53, 164, 53);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Esto es para empezar a hacerlo responsive */
-@media(max-width:1280px) {
-    .container {
-        width: 100%;
-    }
+@media (max-width: 1280px) {
+  .container {
+    width: 100%;
+  }
+}
+
+/* Botón del carrito de compras*/
+#carrito i {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  color: rgb(255, 255, 255);
+  background: rgb(53, 164, 53);
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+#carrito i:hover {
+  text-decoration: none;
+  color: rgb(53, 164, 53);
+  background: rgb(255, 255, 255);
 }
