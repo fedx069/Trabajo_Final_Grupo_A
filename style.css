@@ -1,0 +1,50 @@
+/* Fuente - NR */
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/* Reglas generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: rgb(53, 164, 53);
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Esto es para que no se peguen arriba y los tape el nav */
+.inicio, .productos, .servicios, .nosotros, .contacto {
+    padding-top: 80px;
+}
+
+/* Contenedor para que sea responsive */
+.container {
+    width: 1280px;
+    margin: auto;
+}
+
+/* Footer simple */
+footer {
+    color: white;
+    margin-top: 100%;
+    height: 75px;
+    background-color: rgb(53, 164, 53);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Esto es para empezar a hacerlo responsive */
+@media(max-width:1280px) {
+    .container {
+        width: 100%;
+    }
+}
