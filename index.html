@@ -17,9 +17,19 @@
   <body>
     <header>
       <nav class="navbar">
-        <a href="/index.html">Logo</a>
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+        <a href="#inicio">Logo</a>
       </nav>
     </header>
+
+    <nav class="mobile-nav">
+      <a href="#inicio" id="btn-menu">INICIO</a>
+      <a href="/servicios.html" id="btn-menu">SERVICIOS</a>
+      <a href="/nosotros.html" id="btn-menu">NOSOTROS</a>
+      <a href="/contacto.html" id="btn-menu">CONTACTO</a>
+    </nav>
 
     <main>
       <section id="inicio">
@@ -71,7 +81,7 @@
     <!-- botones -->
     <div class="botones">
       <!-- botón de subir -->
-      <div class="subir" id="boton-subir">
+      <div class="subir hidden" id="boton-subir">
         <a href="#inicio"> <i class="las la-angle-up"></i></a>
       </div>
       <!-- botón del carrito de compras -->

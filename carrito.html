@@ -16,60 +16,65 @@
 
   <body>
     <header>
-      <nav class="navbar">
-        <a href="/index.html">Logo</a>
-      </nav>
-    </header>
+        <nav class="navbar">
+            <button class="hamburger">
+              <div class="bar"></div>
+            </button>
+            <a href="/index.html">Logo</a>
+          </nav>
+        </header>
+    
+        <nav class="mobile-nav">
+          <a href="/index.html" class="btn-menu">INICIO</a>
+          <a href="/carrito.html" class="btn-menu">PRODUCTOS</a>
+          <a href="/servicios.html" class="btn-menu">SERVICIOS</a>
+          <a href="/nosotros.html" class="btn-menu">NOSOTROS</a>
+          <a href="/contacto.html" class="btn-menu">CONTACTO</a>
+        </nav>
 
     <main>
-        <div class="container-productos">
-            <div class="productos-grid">
-                <div class="producto">
-                    <figure class="img-box">
-                        <img src="/images/panel_solar.jpg" alt="panelsolar" class="img" id="panelsolar">
-                    </figure>
-                    <div class="content">
-                        <h3>Panel Solar</h3>
-                        <p>Este panel solar de alta eficiencia es perfecto para hogares y
-                            negocios. Genera electricidad a partir de la luz del sol, reduciendo
-                            así la dependencia de la red eléctrica tradicional.</p>
-                        <button class="btn-comprar">Agregar al carrito.</button>
-                    </div>
+        <div class="container-prouctos">
+            <div class="producto">
+                <figure>
+                    <img src="/images/panel_solar.jpg" alt="panel-solar" id="panelsolar">
+                </figure>
+                <div class="info-producto">
+                    <h2>Panel Solar</h2>
+                    <p class="precio">$200.000</p>
+                    <button>Añadir al carrito</button>
                 </div>
-                
-                <div class="producto">
-                    <figure class="img-box">
-                        <img src="/images/bateria.png" alt="bateria" class="img" id="bateria">
-                    </figure>
-                    <div class="content">
-                        <h3>Batería de almacenamiento</h3>
-                        <p>Esta batería de almacenamiento de alta capacidad es ideal para
-                            hogares y negocios que deseen almacenar la energía generada por
-                            paneles solares o turbinas eólicas. Reduce la dependencia de la red
-                            eléctrica y permite un suministro de energía más estable y
-                            sostenible.</p>
-                        <button class="btn-comprar">Agregar al carrito</button>
-                    </div>
+            </div>
+
+            <div class="producto">
+                <figure>
+                    <img src="/images/bateria.png" alt="bateria" id="bateria">
+                </figure>
+                <div class="info-producto">
+                    <h2>Batería</h2>
+                    <p class="precio">$200.000</p>
+                    <button>Añadir al carrito</button>
                 </div>
-                
-                <div class="producto">
-                    <figure class="img-box">
-                        <img src="/images/turbina_eolica.jpg" alt="turbinaeolica" class="img" id="turbina">
-                    </figure>
-                    <div class="content">
-                        <h3>Turbina Eólica</h3>
-                        <p>Estas turbinas eólicas son perfectas para hogares y negocios en
-                            zonas con vientos fuertes. Generan electricidad a partir de la
-                            energía cinética del viento, reduciendo así la dependencia de la red
-                            eléctrica tradicional.</p>
-                        <button class="btn-comprar">Agregar al carrito</button>
-                    </div>
+            </div>
+
+            <div class="producto">
+                <figure>
+                    <img src="/images/turbina_eolica.jpg" alt="turbina" id="turbina">
+                </figure>
+                <div class="info-producto">
+                    <h2>Turbinas Eólicas</h2>
+                    <p class="precio">$200.000</p>
+                    <button>Añadir al carrito</button>
                 </div>
             </div>
         </div>
     </main>
     
-
+    <div class="botones">
+        <!-- botón de subir -->
+        <div class="subir hidden" id="boton-subir">
+          <a href="#inicio"> <i class="las la-angle-up"></i></a>
+        </div>
+    </div>
     <footer>Footer</footer>
 
     <script src="script.js"></script>
