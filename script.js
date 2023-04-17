@@ -29,3 +29,16 @@ menu_item.addEventListener('click', function() {
   menu_btn.classList.toggle('is-active');
   mobile_menu.classList.toggle('is-active');
 });
+
+//banner de productos
+var counter = 2;
+if (window.location.pathname === '/index.html'){
+  setInterval(function autoScroll(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 3){
+      counter = 1;
+    }
+  }
+  , 5000)
+}
