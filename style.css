@@ -39,7 +39,7 @@ nav a img {
   height: 55px;
 }
 
-.logo img{
+.logo img {
   height: 40px;
   width: auto;
   padding-right: 10px;
@@ -49,7 +49,7 @@ nav a img {
   padding-right: 10px;
 }
 
-/* sector carrito de compras === lo puse arriba porque sino tenia que hacer un re quilombo para el despliegue del carrito oculto */
+/* sector carrito de compras */
 
 .shop {
   position: relative;
@@ -249,6 +249,7 @@ nav a img {
 }
 
 /* Esto es para que no se peguen arriba y los tape el nav */
+
 .inicio,
 .productos,
 .servicios,
@@ -260,6 +261,8 @@ nav a img {
 .inicio {
   font-size: 30px;
   font-weight: bold;
+  text-align: left;
+  margin-left: 20px;
 }
 
 .inicio h1 {
@@ -270,9 +273,16 @@ nav a img {
   line-height: 45px;
 }
 
-.productos h1 {
-  font-size: 30px;
+.productos h1,
+.contacto h1,
+.servicios h1,
+.nosotros h1 {
+  color: rgb(53, 164, 53);
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
   margin-bottom: 20px;
+  margin-left: 20px;
   padding-top: 20px;
   border-top: 10px solid rgb(53, 164, 53);
 }
@@ -283,26 +293,6 @@ nav a img {
   align-items: center;
   text-align: center;
   width: 100%;
-}
-
-.servicios h1 {
-  font-size: 30px;
-  padding-top: 20px;
-  border-top: 10px solid rgb(53, 164, 53);
-}
-
-.nosotros h1{
-  font-size: 30px;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  border-top: 10px solid rgb(53, 164, 53);
-}
-
-.contacto h1 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  border-top: 10px solid rgb(53, 164, 53);
 }
 
 /* Contenedor */
@@ -432,7 +422,6 @@ nav a img {
   background: #86fa6f;
 }
 
-
 /* servicios */
 
 .servicio {
@@ -468,14 +457,20 @@ nav a img {
 
 .subtitulo-nos {
   font-size: 30px;
+  line-height: 45px;
 }
 
 .nosotros {
   width: 100%;
   height: auto;
-  color: #000000;
-  text-align: center;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  font-weight: bold;
   padding-top: 20px;
+}
+
+.nosotros p {
+  margin-left: 20px;
 }
 
 .nosotros img {
@@ -492,7 +487,7 @@ nav a img {
 .persona {
   background-color: #e3e3e3;
   border-radius: 16px;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1) ;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
@@ -645,7 +640,6 @@ footer a:hover {
 }
 
 @media screen and (max-width: 1024px) {
-
   .slider {
     width: 70%;
     height: 400px;
@@ -666,7 +660,6 @@ footer a:hover {
     margin-top: 380px;
     width: 70%;
   }
-
 }
 
 @media screen and (max-width: 900px) {
@@ -679,11 +672,9 @@ footer a:hover {
   .container-slider {
     max-width: auto;
   }
-  
 }
 
 @media screen and (max-width: 768px) {
-
   .container-slider {
     max-width: 400px;
     margin-top: -20%;
@@ -702,10 +693,9 @@ footer a:hover {
     margin-top: 230px;
     width: 430px;
   }
-  
+
   .slide img {
     width: 400px;
     height: 250px;
   }
-
 }
