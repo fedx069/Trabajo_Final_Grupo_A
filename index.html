@@ -21,16 +21,17 @@
           <div class="bar"></div>
         </button>
         <a href="#inicio"
-          ><img src="images/environment-white.png" />EcoSoluciones</a
+          class="logo"><img src="images/environment-white.png" />EcoSoluciones</a
         >
       </nav>
     </header>
 
     <nav class="mobile-nav">
-      <a href="#inicio" id="btn-menu">INICIO</a>
-      <a href="#servicios" id="btn-menu">SERVICIOS</a>
-      <a href="#nosotros" id="btn-menu">NOSOTROS</a>
-      <a href="#contacto" id="btn-menu">CONTACTO</a>
+      <a href="#inicio" class="btn-menu">INICIO</a>
+      <a href="/productos.html" class="btn-menu">PRODUCTOS</a>
+      <a href="#servicios" class="btn-menu">SERVICIOS</a>
+      <a href="#nosotros" class="btn-menu">NOSOTROS</a>
+      <a href="#contacto" class="btn-menu">CONTACTO</a>
     </nav>
 
     <main>
@@ -55,7 +56,7 @@
         <!-- sección de productos -->
         <div class="container">
           <div class="productos">
-            <h1>Productos</h1>
+            <h1>¡Ofrecemos los siguientes productos!</h1> <br> <br>
             <div class="container-slider">
               <div class="slider">
                 <div class="slides">
@@ -103,6 +104,27 @@
         <div class="container">
           <div class="servicios">
             <h1>Servicios</h1>
+            <div class="contenedor-servicio">
+                <div class="servicio">
+                    <img src="/images/eco-light.png" alt="lightbulb">
+                    <h3 style="margin: 10px">Asesoramiento en sostenibilidad.</h3>
+                    <p>Ofrecemos <strong>asesoramiento personalizado</strong> para empresas y hogares que
+                        quieren mejorar su impacto ambiental.</p>
+                </div>
+
+                <div class="servicio">
+                    <img src="/images/settings.png" alt="wrench">
+                    <h3 style="margin: 10px">Instalación de paneles solares.</h3>
+                    <p><strong>Instalamos paneles solares</strong> para generar energía eléctrica renovable y sostenible.</p>
+                </div>
+
+                <div class="servicio">
+                    <img src="/images/recycle.png" alt="reciclaje">
+                    <h3 style="margin: 10px">Reciclaje.</h3>
+                    <p>Recogemos materiales <strong>reciclables</strong> y los llevamos a centros de reciclaje para su reutilización.</p>
+                </div>
+            </div>
+        </div>
           </div>
         </div>
       </section>
@@ -112,6 +134,60 @@
         <div class="container">
           <div class="nosotros">
             <h1>Nosotros</h1>
+            <p class="subtitulo-nos">
+              Somos una empresa dedicada a promover <br> la sostenibilidad y la conservación del medio ambiente. <br>
+                Ofrecemos soluciones ecológicas para el hogar y la oficina, <br> así como servicios de asesoramiento
+                en sostenibilidad.
+            </p> <br>
+
+            <p class="subtitulo-nos">
+              Nuestra misión es fomentar prácticas sostenibles y responsables <br> con el medio ambiente,
+                contribuyendo así a la creación de un mundo <br> más limpio y habitable para todos.
+            </p> <br>
+
+
+            <div class="nosotros-grid">
+              <div class="persona">
+                  <figure class="img-box">
+                      <img src="/images/arbol.jpg" alt="persona1">
+                  </figure>
+                  <div class="content">
+                      <h2>Arbolito</h1>
+                      <p>Cargo: Dueño</p>
+                  </div>
+              </div>
+              <div class="persona">
+                  <figure class="img-box">
+                      <img src="/images/arbol.jpg" alt="persona2">
+                  </figure>
+                  <div class="content">
+                      <h2>Nombre de persona 1</h1>
+                      <p>cargo</p>
+                      <div class="socials">
+                        <a href="#"><img src="" alt=""></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="persona">
+                  <figure class="img-box">
+                      <img src="/images/arbol.jpg" alt="persona3">
+                  </figure>
+                  <div class="content">
+                      <h2>Nombre de persona 1</h1>
+                      <p>cargo</p>
+                  </div>
+              </div>
+              <div class="persona">
+                  <figure class="img-box">
+                      <img src="/images/arbol.jpg" alt="persona4">
+                  </figure>
+                  <div class="content">
+                      <h2>Nombre de persona 1</h1>
+                      <p>cargo</p>
+                  </div>
+              </div>
+          </div>
+
           </div>
         </div>
       </section>
@@ -133,7 +209,10 @@
         <a href="#inicio"> <i class="las la-angle-up"></i></a>
       </div>
     </div>
-    <footer>Footer</footer>
+    <footer>
+      &#169; 2023 EcoSoluciones. Todos los derechos reservados.  |
+      <a href="#">Políticas de Privacidad y Términos y Condiciones.</a></dd> | <a href="#">Servicio al Cliente.</a>
+    </footer>
 
     <script src="script.js"></script>
   </body>

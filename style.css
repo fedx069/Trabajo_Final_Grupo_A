@@ -39,6 +39,16 @@ nav a img {
   height: 55px;
 }
 
+.logo img{
+  height: 40px;
+  width: auto;
+  padding-right: 10px;
+}
+
+.logo {
+  padding-right: 10px;
+}
+
 /* sector carrito de compras === lo puse arriba porque sino tenia que hacer un re quilombo para el despliegue del carrito oculto */
 
 .shop {
@@ -225,7 +235,7 @@ nav a img {
   right: 70%;
 }
 
-.mobile-nav a {
+.btn-menu {
   display: block;
   width: 100%;
   max-width: 200px;
@@ -260,11 +270,49 @@ nav a img {
   line-height: 45px;
 }
 
+.productos h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  border-top: 10px solid rgb(53, 164, 53);
+}
+
+.servicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.servicios h1 {
+  font-size: 30px;
+  padding-top: 20px;
+  border-top: 10px solid rgb(53, 164, 53);
+}
+
+.nosotros h1{
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  border-top: 10px solid rgb(53, 164, 53);
+}
+
+.contacto h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  border-top: 10px solid rgb(53, 164, 53);
+}
+
 /* Contenedor */
 .container {
-  width: 1280px;
+  width: 100%;
   margin: auto;
-  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /* Banner de productos */
@@ -277,15 +325,15 @@ nav a img {
 }
 
 .slider {
-  width: 100%;
-  height: 700px;
+  width: 90%;
+  height: 600px;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .slides {
   width: 500%;
-  height: 700px;
+  height: 600px;
   display: flex;
 }
 
@@ -301,7 +349,7 @@ nav a img {
 
 .slide img {
   width: 100%;
-  height: 700px;
+  height: 600px;
   transition: 1s;
 }
 
@@ -355,8 +403,8 @@ nav a img {
 
 .auto-nav {
   position: absolute;
-  width: 100%;
-  margin-top: 660px;
+  width: 90%;
+  margin-top: 580px;
   display: flex;
   justify-content: center;
 }
@@ -382,6 +430,70 @@ nav a img {
 
 #radio3:checked ~ .auto-nav .auto-btn3 {
   background: #86fa6f;
+}
+
+
+/* servicios */
+
+.servicio {
+  width: 100%;
+  color: #000000;
+  background-color: #ebebeb;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 20px;
+  text-align: left;
+  transition: 0.25s;
+}
+
+.servicio:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.servicio img {
+  width: 50px;
+  margin-left: 10px;
+}
+
+.contenedor-servicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+/* Parte de nosotros */
+
+.subtitulo-nos {
+  font-size: 30px;
+}
+
+.nosotros {
+  width: 100%;
+  height: auto;
+  color: #000000;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.nosotros img {
+  width: 100%;
+}
+
+.nosotros-grid {
+  padding-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+}
+
+.persona {
+  background-color: #e3e3e3;
+  border-radius: 16px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1) ;
+  overflow: hidden;
 }
 
 /* Botones */
@@ -515,9 +627,85 @@ footer {
   align-items: center;
 }
 
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 /* Esto es para empezar a hacerlo responsive - Los Media Query siempre van al fondo.*/
-@media (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
   .container {
     width: 100%;
   }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .slider {
+    width: 70%;
+    height: 400px;
+  }
+
+  .slider img {
+    height: 400px;
+  }
+
+  .link {
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 60%;
+  }
+
+  .auto-nav {
+    margin-top: 380px;
+    width: 70%;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container-slider {
+    max-width: auto;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+
+  .container-slider {
+    max-width: 400px;
+    margin-top: -20%;
+    margin-bottom: -20%;
+  }
+
+  .slider {
+    height: auto;
+  }
+
+  .slides {
+    height: 250px;
+  }
+
+  .auto-nav {
+    margin-top: 230px;
+    width: 430px;
+  }
+  
+  .slide img {
+    width: 400px;
+    height: 250px;
+  }
+
 }
