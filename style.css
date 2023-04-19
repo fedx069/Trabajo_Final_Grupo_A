@@ -253,8 +253,7 @@ nav a img {
 .inicio,
 .productos,
 .servicios,
-.nosotros,
-.contacto {
+.nosotros-contacto{
   padding-top: 80px;
 }
 
@@ -273,7 +272,6 @@ nav a img {
 }
 .inicio h1,
 .productos h1,
-.contacto h1,
 .servicios h1,
 .nosotros h1 {
   display: flex;
@@ -681,7 +679,6 @@ footer a:hover {
 
   .inicio h1,
   .productos h1,
-  .contacto h1,
   .servicios h1,
   .nosotros h1 {
     font-size: 30px;
@@ -697,9 +694,10 @@ footer a:hover {
     margin-bottom: -10%;
   }
 
-  .contacto p {
-    font-size: 20px;
+  .footer {
+    font-size: 10px;
   }
+
 }
 
 @media screen and (max-width: 768px) {
