@@ -4,7 +4,7 @@ const botonSubir = document.getElementById("boton-subir");
 
 window.addEventListener("scroll", () => {
   var scrollPos = window.scrollY;
-  if (scrollPos > 500) {
+  if (scrollPos > 300) {
     botonSubir.classList.add("visible");
     botonSubir.classList.remove("hidden");
   } else {
