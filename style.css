@@ -529,21 +529,21 @@ nav a img {
   margin-top: 20px;
 }
 
-.boton button{
+.boton a{
+  display: flex;
   justify-content: center;
-  align-tracks: center;
+  align-items: center;
   padding: 14px 20px;
   width: 100%;
   background-color: rgb(53, 164, 53);
   text-decoration: none;
-  border: none;
   border-radius: 20px;
   color: #fff;
   margin-top: 20px;
   font-size: 20px;
 }
 
-.boton button:hover {
+.boton a:hover {
   border: 1px solid rgb(53, 164, 53);
   background-color: #fff;
   color: rgb(53, 164, 53);
@@ -676,6 +676,50 @@ nav a img {
   margin-bottom: -3%;
   display: block;
   border: 5px solid rgb(53, 164, 53);
+}
+
+/* página de contacto */
+
+.container-contacto {
+  padding-top: 80px;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  color: #000000;
+}
+
+.container-contacto p{
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+  width: 40%;
+  padding: 10px;
+  margin-left: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.enviar {
+  background-color: rgb(53, 164, 53);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-left: 20px;
+  cursor: pointer;
 }
 
 /* Footer simple  - Siempre al fondo para organizarse mejor*/

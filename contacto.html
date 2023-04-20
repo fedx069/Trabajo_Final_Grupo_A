@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco Soluciones</title>
+    <!-- iconos -->
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- css personalizado -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
+        <a href="#inicio"
+          class="logo"><img src="images/environment-white.png" />EcoSoluciones</a
+        >
+      </nav>
+    </header>
+
+    <!-- menu hamburguesa -->
+    <nav class="mobile-nav">
+      <a href="#inicio" class="btn-menu">INICIO</a>
+      <a href="/productos.html" class="btn-menu">PRODUCTOS</a>
+      <a href="#servicios" class="btn-menu">SERVICIOS</a>
+      <a href="#nosotros-contacto" class="btn-menu">NOSOTROS</a>
+      <a href="/contacto.html" class="btn-menu">CONTACTO</a>
+    </nav>
+
+    <main>
+        <section id="contacto" class="container-contacto">
+            <p>
+              Si deseas ponerte en contacto con nosotros, por favor llena el
+              siguiente formulario:
+            </p><br>
+            <form>
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+              <label for="telefono">Teléfon (sin el +54):</label>
+              <input type="tel" id="telefono" name="telefono" pattern="^\d{10}$" required />
+              <label for="mensaje">Mensaje (opcional):</label>
+              <textarea id="mensaje" name="mensaje"></textarea><br>
+              <button class="enviar" onclick="createPDF()">Enviar</button>
+            </form>
+          </section> <br><br>
+    </main>
+
+    <!-- botones -->
+    <div class="botones">
+        <!-- botón de subir -->
+        <div class="subir hidden" id="boton-subir">
+          <a href="#inicio"> <i class="las la-angle-up"></i></a>
+        </div>
+      </div>
+      <footer>
+        &#169; 2023 EcoSoluciones. Todos los derechos reservados.
+        <a href="pdptyces.pdf" target="_blank">Políticas de Privacidad y Términos y Condiciones.</a></dd> <a href="#">Servicio al Cliente.</a>
+      </footer>
+  
+      <script src="script.js"></script>
+    </body>
+  </html>  
