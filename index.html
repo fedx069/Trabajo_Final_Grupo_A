@@ -31,6 +31,7 @@
       </nav>
     </header>
 
+    <!-- menu hamburguesa -->
     <nav class="mobile-nav">
       <a href="#inicio" class="btn-menu">INICIO</a>
       <a href="/productos.html" class="btn-menu">PRODUCTOS</a>
@@ -70,8 +71,9 @@
                   <input type="radio" name="radio-btn" id="radio1" checked />
                   <input type="radio" name="radio-btn" id="radio2" />
                   <input type="radio" name="radio-btn" id="radio3" />
+
                   <div class="slide first">
-                    <img src="../images/panel_solar.jpg" alt="img1" />
+                    <img src="/images/panel_solar.jpg" alt="img1" />
                     <div class="link">
                       <a href="/productos.html" class="slide-button"
                         >VER PRODUCTO</a
@@ -79,7 +81,7 @@
                     </div>
                   </div>
                   <div class="slide">
-                    <img src="../images/bateria.png" alt="" />
+                    <img src="/images/bateria.png" alt="" />
                     <div class="link">
                       <a href="/productos.html" class="slide-button"
                         >VER PRODUCTO</a
@@ -87,7 +89,7 @@
                     </div>
                   </div>
                   <div class="slide">
-                    <img src="../images/turbina_eolica.jpg" alt="" />
+                    <img src="/images/turbina_eolica.jpg" alt="" />
                     <div class="link">
                       <a href="/productos.html" class="slide-button"
                         >VER PRODUCTO</a
@@ -158,11 +160,46 @@
           </div>
 
           <div class="contactanos">
-            <div class="personas">
-              personas
+            <div class="slider-personas">
+              <div class="slides-p">
+                <input type="radio" name="radio-btn-p" id="radio1-p">
+                <input type="radio" name="radio-btn-p" id="radio2-p">
+                <input type="radio" name="radio-btn-p" id="radio3-p">
+                <input type="radio" name="radio-btn-p" id="radio4-p">
+
+                <div class="slide-p first-p">
+                  <img src="/images/arbol.jpg" alt="persona1">
+                </div>
+
+                <div class="slide-p">
+                  <img src="/images/arbol.jpg" alt="persona2">
+                </div>
+
+                <div class="slide-p">
+                  <img src="/images/arbol.jpg" alt="persona3">
+                </div>
+
+                <div class="slide-p">
+                  <img src="/images/arbol.jpg" alt="persona4">
+                </div>
+              </div>
+              <div class="nav-man">
+                <label for="radio1-p" class="manual-btn"></label>
+                <label for="radio2-p" class="manual-btn"></label>
+                <label for="radio3-p" class="manual-btn"></label>
+                <label for="radio4-p" class="manual-btn"></label>
+              </div>
             </div>
+
+            <div class="descripcion-persona">
+              <p id="texto">
+                Nombre: <span id="nombre">Federico Galeano</span> <br>
+                Cargo: <span id="cargo">CEO</span>
+              </p>
+            </div>
+
             <div class="boton">
-              <button class="contacto">Contáctanos</button>
+              <button>Contáctanos</button>
             </div>
           </div>
         </div>

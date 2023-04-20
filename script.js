@@ -168,3 +168,25 @@ const showHTML = () => {
   valorTotal.innerText = `$${total}`;
   countProducts.innerText = totalOfProducts;
 };
+
+//script para personas
+const radio1 = document.getElementById("radio1-p");
+const radio2 = document.getElementById("radio2-p");
+const radio3 = document.getElementById("radio3-p");
+const radio4 = document.getElementById("radio4-p");
+const cargo = document.getElementById("cargo");
+const nombre = documnet.getElementById("nombre");
+
+if (radio1.checked) {
+  nombre.textContent = 'Federico Galeano'
+  cargo.textContent = 'CEO'
+} else if (radio2.checked) {
+  nombre.textContent = 'Nicolás Reyna'
+  cargo.textContent = 'CFO'
+} else if (radio3.checked) {
+  nombre.textContent = 'Martín Frávega'
+  cargo.textContent = 'COO'
+} else if (radio4.checked) {
+  nombre.textContent = 'Agustín Billordo'
+  cargo.textContent = 'CMO'
+}
