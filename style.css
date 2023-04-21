@@ -712,6 +712,10 @@ form textarea {
   margin-bottom: 20px;
 }
 
+form textarea {
+  resize: none;
+}
+
 .enviar {
   background-color: rgb(53, 164, 53);
   color: #fff;
@@ -732,8 +736,9 @@ form textarea {
   width: 50%;
 }
 
-/* #map {
-} */
+#map {
+  padding-top: 80px;
+}
 
 /* Footer simple  - Siempre al fondo para organizarse mejor*/
 footer {

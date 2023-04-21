@@ -68,18 +68,24 @@
         </main>
       </div>
      
-      <!-- mapa API; token api:  pk.eyJ1IjoidmVuZGl0dGltYXJ0aW4iLCJhIjoiY2 -->
+      <!-- mapa API -->
       
-      <div id='map' style='width: 400px; height: 300px;'></div>
+      <div id='map' style='width: 400px; height: 400px'></div>
         <script>
-          mapboxgl.accessToken = 'pk.eyJ1IjoidmVuZGl0dGltYXJ0aW4iLCJhIjoiY2';
+          mapboxgl.accessToken = 'pk.eyJ1Ijoic21vbGJ1dHRlcnMiLCJhIjoiY2xncXY3dzA3MTVudjNxcDlhZGozNzVndSJ9.AYuxcnPWRptTtGB_D_10EQ';
           var map = new mapboxgl.Map({
             container: "map",
             style: "mapbox://styles/mapbox/streets-v11",
-            center: [-74.5, 40],
+            center: [-122.1545229, 37.4429964],
             zoom: 9
           });
           map.addControl(new mapboxgl.NavigationControl());
+
+          const marker = new mapboxgl.Marker({
+          color: "rgb(53, 164, 53)",
+          draggable: false
+          }).setLngLat([-122.1545229, 37.4429964])
+          .addTo(map);
         </script>
       </div>
 
