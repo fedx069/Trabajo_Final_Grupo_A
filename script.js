@@ -23,11 +23,11 @@ menu_btn.addEventListener("click", function () {
   mobile_menu.classList.toggle("is-active");
 });
 
-menu_items.forEach(function(item) {
-  item.addEventListener('click', function() {
+menu_items.forEach(function (item) {
+  item.addEventListener("click", function () {
     menu_btn.classList.toggle("is-active");
     mobile_menu.classList.toggle("is-active");
-  })
+  });
 });
 
 //banner de productos
@@ -178,17 +178,17 @@ const cargo = document.getElementById("cargo");
 const nombre = documnet.getElementById("nombre");
 
 if (radio1.checked) {
-  nombre.textContent = 'Federico Galeano';
-  cargo.textContent = 'CEO';
+  nombre.textContent = "Federico Galeano";
+  cargo.textContent = "CEO";
 } else if (radio2.checked) {
-  nombre.textContent = 'Nicolás Reyna';
-  cargo.textContent = 'CFO';
+  nombre.textContent = "Nicolás Reyna";
+  cargo.textContent = "CFO";
 } else if (radio3.checked) {
-  nombre.textContent = 'Martín Frávega';
-  cargo.textContent = 'COO';
+  nombre.textContent = "Martín Frávega";
+  cargo.textContent = "COO";
 } else if (radio4.checked) {
-  nombre.textContent = 'Agustín Billordo';
-  cargo.textContent = 'CMO';
+  nombre.textContent = "Agustín Billordo";
+  cargo.textContent = "CMO";
 } else {
-  console.log('Ninguna opción está seleccionada.')
+  console.log("Ninguna opción está seleccionada.");
 }

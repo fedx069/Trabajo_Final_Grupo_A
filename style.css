@@ -253,7 +253,7 @@ nav a img {
 .inicio,
 .productos,
 .servicios,
-.nosotros-contacto{
+.nosotros-contacto {
   padding-top: 80px;
 }
 
@@ -495,10 +495,10 @@ nav a img {
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.manual-btn:not(:last-child){
+.manual-btn:not(:last-child) {
   margin-right: 40px;
 }
 
@@ -529,7 +529,7 @@ nav a img {
   margin-top: 20px;
 }
 
-.boton a{
+.boton a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -689,7 +689,7 @@ nav a img {
   color: #000000;
 }
 
-.container-contacto p{
+.container-contacto p {
   font-size: 20px;
   margin-left: 10px;
 }
@@ -721,6 +721,19 @@ form textarea {
   margin-left: 20px;
   cursor: pointer;
 }
+
+#contenedorContactos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#formulario {
+  width: 50%;
+}
+
+/* #map {
+} */
 
 /* Footer simple  - Siempre al fondo para organizarse mejor*/
 footer {
@@ -818,11 +831,9 @@ footer a:hover {
   .footer {
     font-size: 10px;
   }
-
 }
 
 @media screen and (max-width: 768px) {
-
   .container-slider {
     max-width: 800px;
     margin-top: -20%;
@@ -863,5 +874,4 @@ footer a:hover {
   .mobile-nav.is-active {
     right: 0%;
   }
-
 }
