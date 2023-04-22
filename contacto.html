@@ -45,56 +45,56 @@
       <a href="/index.html#nosotros" class="btn-menu">NOSOTROS</a>
       <a href="/contacto.html" class="btn-menu">CONTACTO</a>
     </nav>
-    <div id="contenedorContactos">
-      <div id="formulario">
-        <main>
-            <section id="contacto" class="container-contacto">
-                <p>
-                  Si deseas ponerte en contacto con nosotros, por favor llena el
-                  siguiente formulario:
-                </p><br>
-                <form>
-                  <label for="nombre">Nombre:</label>
-                  <input type="text" id="nombre" name="nombre" required />
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required />
-                  <label for="telefono">Teléfon (sin el +54):</label>
-                  <input type="tel" id="telefono" name="telefono" pattern="^\d{10}$" required />
-                  <label for="mensaje">Mensaje (opcional):</label>
-                  <textarea id="mensaje" name="mensaje"></textarea><br>
-                  <button class="enviar" onclick="createPDF()">Enviar</button>
-                </form>
-              </section> <br><br>
-        </main>
-      </div>
-     
-      <!-- mapa API -->
-      
-      <div id='map' style='width: 400px; height: 400px'></div>
-        <script>
-          mapboxgl.accessToken = 'pk.eyJ1Ijoic21vbGJ1dHRlcnMiLCJhIjoiY2xncXY3dzA3MTVudjNxcDlhZGozNzVndSJ9.AYuxcnPWRptTtGB_D_10EQ';
-          var map = new mapboxgl.Map({
-            container: "map",
-            style: "mapbox://styles/mapbox/streets-v11",
-            center: [-122.1545229, 37.4429964],
-            zoom: 9
-          });
-          map.addControl(new mapboxgl.NavigationControl());
 
-          const marker = new mapboxgl.Marker({
-          color: "rgb(53, 164, 53)",
-          draggable: false
-          }).setLngLat([-122.1545229, 37.4429964])
-          .addTo(map);
-        </script>
-      </div>
+    <main>
+      <div class="container-contacto">
+        <section id="contacto" class="contacto">
+          <p>
+            Si deseas ponerte en contacto con nosotros, por favor llena el
+            siguiente formulario:
+          </p><br>
+          <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="telefono">Teléfon (sin el +54):</label>
+            <input type="tel" id="telefono" name="telefono" pattern="^\d{10}$" required />
+            <label for="mensaje">Mensaje (opcional):</label>
+            <textarea id="mensaje" name="mensaje"></textarea><br>
+            <button class="enviar" onclick="createPDF()">Enviar</button>
+          </form>
+        </section> <br><br>
 
-    </div>
+        <div class="ubicacion">
+          <p>Nos encontramos en la siguiente ubicación:</p> <br>
+          <!-- mapa API -->
+          <div id='map' style='width: 400px; height: 400px'></div>
+            <script>
+              mapboxgl.accessToken = 'pk.eyJ1Ijoic21vbGJ1dHRlcnMiLCJhIjoiY2xncXY3dzA3MTVudjNxcDlhZGozNzVndSJ9.AYuxcnPWRptTtGB_D_10EQ';
+              var map = new mapboxgl.Map({
+                container: "map",
+                style: "mapbox://styles/mapbox/streets-v11",
+                center: [-122.1545229, 37.4429964],
+                zoom: 9
+              });
+              map.addControl(new mapboxgl.NavigationControl());
+  
+              const marker = new mapboxgl.Marker({
+              color: "rgb(53, 164, 53)",
+              draggable: false
+              }).setLngLat([-122.1545229, 37.4429964])
+              .addTo(map);
+            </script>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <script src="/script.js"></script>
     <footer>
       &#169; 2023 EcoSoluciones. Todos los derechos reservados.
-      <a href="pdptyces.pdf" target="_blank">Políticas de Privacidad y Términos y Condiciones.</a></dd> <a href="#">Servicio al Cliente.</a>
+      <a href="pdptyces.pdf" target="_blank">Políticas de Privacidad y Términos y Condiciones.</a></dd> <a href="/contacto.html">Servicio al Cliente.</a>
     </footer>
     
   </body>

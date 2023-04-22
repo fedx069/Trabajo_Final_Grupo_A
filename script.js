@@ -170,25 +170,31 @@ const showHTML = () => {
 };
 
 //script para personas
-const radio1 = document.getElementById("radio1-p");
-const radio2 = document.getElementById("radio2-p");
-const radio3 = document.getElementById("radio3-p");
-const radio4 = document.getElementById("radio4-p");
-const cargo = document.getElementById("cargo");
-const nombre = documnet.getElementById("nombre");
+//radio 1
+function nombre1() {
+  const nombre = document.getElementById('nombre');
+  const cargo = document.getElementById('cargo');
+  nombre.textContent = "Federico Galeano"
+  cargo.textContent = "CEO"
+}
 
-if (radio1.checked) {
-  nombre.textContent = "Federico Galeano";
-  cargo.textContent = "CEO";
-} else if (radio2.checked) {
-  nombre.textContent = "Nicolás Reyna";
-  cargo.textContent = "CFO";
-} else if (radio3.checked) {
-  nombre.textContent = "Martín Frávega";
-  cargo.textContent = "COO";
-} else if (radio4.checked) {
-  nombre.textContent = "Agustín Billordo";
-  cargo.textContent = "CMO";
-} else {
-  console.log("Ninguna opción está seleccionada.");
+function nombre2() {
+  const nombre = document.getElementById('nombre');
+  const cargo = document.getElementById('cargo');
+  nombre.textContent = "Nicolás Reyna"
+  cargo.textContent = "COO"
+}
+
+function nombre3() {
+  const nombre = document.getElementById('nombre');
+  const cargo = document.getElementById('cargo');
+  nombre.textContent = "Martín Frávega"
+  cargo.textContent = "CPO"
+}
+
+function nombre4() {
+  const nombre = document.getElementById('nombre');
+  const cargo = document.getElementById('cargo');
+  nombre.textContent = "Agustín Billordo"
+  cargo.textContent = "CTO"
 }
