@@ -303,7 +303,7 @@ nav a img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .slider {
@@ -465,6 +465,7 @@ nav a img {
   width: 650px;
   height: 500px;
   border-radius: 10px;
+  margin-right: 80px;
   overflow: hidden;
 }
 
@@ -531,6 +532,7 @@ nav a img {
 }
 
 .descripcion-persona {
+  margin-right: 80px;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -542,7 +544,7 @@ nav a img {
   justify-content: center;
   align-items: center;
   padding: 14px 20px;
-  width: 100%;
+  margin-right: 80px;
   background-color: rgb(53, 164, 53);
   text-decoration: none;
   border-radius: 20px;
@@ -759,6 +761,10 @@ form textarea {
   font-size: 20px;
 }
 
+.ubicacion p {
+  margin-left: 20px;
+}
+
 #map {
   margin-left: 20px;
 }
@@ -819,7 +825,6 @@ footer a:hover {
 }
 
 @media screen and (max-width: 900px) {
-
   .logo {
     font-size: 0px;
     margin-right: 50%;
@@ -904,10 +909,9 @@ footer a:hover {
   footer {
     font-size: 12px;
   }
-
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .container-slider {
     max-width: 800px;
     margin-top: -20%;
@@ -961,8 +965,17 @@ footer a:hover {
   .slider-personas {
     width: 70%;
     height: 400px;
+    margin-right: 0px;
     justify-content: center;
     align-items: center;
+  }
+
+  .descripcion-persona {
+    margin-right: 0px;
+  }
+
+  .boton a {
+    margin-right: 0px;
   }
 
   .slider-p img {
@@ -981,6 +994,4 @@ footer a:hover {
     margin-top: -120px;
     margin-left: 0%;
   }
-
-  
 }
